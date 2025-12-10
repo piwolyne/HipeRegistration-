@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Registration Form</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container my-5">
+
+        <div class="card shadow form-container mx-auto">
+
+            
+            <div class="form-header text-center p-3">
+                <img src="Logo.jpg" alt="School Logo" class="logo-img" onerror="this.style.display='none'">
+                <h2 class="mb-0 school_name">HIPE UNIVERSITY</h2>
+                <p class="mb-0 form-title">Student Registration Form</p>
+            </div>
+
+            
+            <p style="color: black; font-size: 16px; line-height: 1.6" class="mt-3 px-4">
+                <i>
+                    This student registration form is designed to collect personal, academic, and contact
+                    information from new students enrolling into HIPE University for proper school documentation.
+                </i>
+            </p>
+
+            
+            <form action="https://formspree.io/f/mzznawqw" method="POST" class="p-4">
+
+                
+                <h3 class="section-title">Personal Information</h3>
+
+                <div class="mb-3">
+                    <label class="form-label">First Name </label>
+                    <input type="text" name="firstname" class="form-control"
+                    placeholder="Enter First Name"required>
+                </div>
+<div class="mb-3">
+                    <label class="form-label">Last Name </label>
+                    <input type="text" name="lastname" class="form-control"
+                    placeholder="Enter Last Name"required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email Address </label>
+                    <input type="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Phone Number </label>
+                    <input type="tel" name="phone" class="form-control" placeholder="+237 6XX XXX XXX" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Date of Birth </label>
+                    <input type="date" name="dob" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+      <label class="form-label">Gender</label>
+      <div>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female" class="ms-3"> Female
+      </div>
+    </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Nationality </label>
+                    <input type="text" name="nationality" class="form-control" required>
+                </div>
+
+                
+                <div class="mb-3">
+                    <label class="form-label">Address </label>
+                    <textarea name="address" class="form-control" rows="2" required></textarea>
+                </div>
+
+                
+                <h3 class="section-title">Guardian Information</h3>
+
+                <div class="mb-3">
+                    <label class="form-label">Guardian Name *</label>
+                    <input type="text" name="guardian_name" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Guardian Phone </label>
+                    <input type="tel" name="guardian_phone" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Guardian Address</label>
+                    <textarea name="guardian_address" class="form-control" rows="2"></textarea>
+                </div>
+
+                
+                <h3 class="section-title">School Information</h3>
+
+                <div class="mb-3">
+                    <label class="form-label">Faculty / School </label>
+                    <select name="faculty" class="form-select" required>
+                        <option value="">Select Faculty</option>
+                        <option>Faculty of Engineering</option>
+                        <option>Faculty of ICT</option>
+                        <option>Faculty of Business</option>
+                        <option>Scform of medicine</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Program of Study </label>
+                    <select name="program" class="form-select" required>
+                        <option value="">Select Program</option>
+                        <option>Full Stack Development</option>
+                        <option>Machine Learning</option>
+                        <option>Data Mining</option>
+                        <option>Data Science</option>
+                        <option>Cybersecurity</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Level </label>
+                    <select name="level" class="form-select" required>
+                        <option value="">Select Level</option>
+                        <option>Level 100</option>
+                        <option>Level 200</option>
+                        <option>Level 300</option>
+                        <option>Level 400</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Mode of Study *
+                    </label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="mode" value="Full Time" required>
+                        <label class="form-check-label">Full Time</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="mode" value="Part Time">
+                        <label class="form-check-label">Part Time</label>
+                    </div>
+                </div>
+
+                
+                <h3 class="section-title">Account Setup</h3>
+
+                <div class="mb-3">
+                    <label class="form-label">Password </label>
+                    <input type="password" name="password" class="form-control" minlength="6" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Confirm Password </label>
+                    <input type="password" name="confirm_password" class="form-control" minlength="6" required>
+                </div>
+
+                
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" required>
+                    <label class="form-check-label">
+                        I confirm that the information provided is accurate.
+                    </label>
+                </div>
+
+                
+                <button type="submit" class="btn btn-primary w-100 mt-3">Submit Registration</button>
+
+            </form>
+
+            
+            <div class="form-footer text-center p-3">
+                <p class="mb-1">© 2025 HIPE UNIVERSITY</p>
+                <p class="mb-0">Developed by PIWO LYNE OBRA</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

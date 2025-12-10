@@ -1,0 +1,55 @@
+body {
+    background-color: #eef3f9;
+}
+
+.form-container {
+    max-width: 650px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.form-header {
+    background: #003366;
+    color: white;
+    padding: 25px 15px;
+}
+
+
+.logo-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+.school-name {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.form-title {
+    font-size: 16px;
+}
+
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #003366;
+    border-left: 4px solid #003366;
+    padding-left: 8px;
+}
+
+
+.form-footer {
+    background: #003366;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
